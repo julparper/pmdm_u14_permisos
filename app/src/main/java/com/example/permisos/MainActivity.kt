@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
     //Solicita el permiso
     private fun requestReadConctactsPermission() {
         if (ActivityCompat.shouldShowRequestPermissionRationale(this,
-                Manifest.permission.CAMERA)) {
+                Manifest.permission.READ_CONTACTS)) {
             //El usuario ya ha rechazado el permiso anteriormente, debemos indicarle que vaya a ajustes.
             Toast.makeText(this,"Conceda permisos en ajustes", Toast.LENGTH_SHORT).show()
         } else {
